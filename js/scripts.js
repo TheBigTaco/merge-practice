@@ -1,2 +1,11 @@
 // DO SOME STUFF I GUESS
-// THAT WE SHOULD
+function Pet(name) {
+  this.name = name;
+  this.isAdopted = false;
+  this.owner = "";
+}
+
+Pet.prototype.Adopt = function(newOwner) {
+  this.isAdopted = true;
+  this.owner = newOwner;
+}
